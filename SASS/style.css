@@ -145,4 +145,9 @@ header .header__title {
   color: white;
   border-color: #FF79DA;
 }
+
+.nav__button {
+  border-radius: 2rem;
+  height: 2.5rem;
+}
 /*# sourceMappingURL=style.css.map */
