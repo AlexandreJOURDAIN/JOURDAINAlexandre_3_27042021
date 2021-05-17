@@ -3,3 +3,11 @@
 	font-family: "Shrikhand";
 	font-size: 1.5rem
 }
+
+@mixin button_pink {
+	background-color:$color-secondary ;
+	height: 2rem;
+    border-radius: 2rem;
+	color: white;
+	border-color:$color-secondary ;
+}

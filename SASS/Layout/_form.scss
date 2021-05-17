@@ -2,11 +2,25 @@
 	width: auto;
 	height: auto;
 	background-color: $color-backgroung;
+	
+	.section-booking__research{
+		display: flex;
+		justify-content: center;
+		margin-left: 40px;
+		.section-booking--left {
+			border-style: none;
+			background-color: $color-backgroung;
+		}
+		.section-booking--input{
+			@extend.section-booking--left;
+			&::placeholder {
+				color: black;
+			}
+		}
+		
+	}
+
 
 }
-.section-booking__reasearch{
-	display: flex;
-	justify-content: center;
-	
-}
+
 

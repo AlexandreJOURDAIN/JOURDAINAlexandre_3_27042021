@@ -1,5 +1,4 @@
-*
-html, body, div, span, applet, object, iframe,
+* html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -85,12 +84,65 @@ header .header__title {
   background-color: #d9d9d9;
 }
 
-.section-booking__reasearch {
+.section-booking .section-booking__research {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-left: 40px;
+}
+
+.section-booking .section-booking__research .section-booking--left, .section-booking .section-booking__research .section-booking--input {
+  border-style: none;
+  background-color: #d9d9d9;
+}
+
+.section-booking .section-booking__research .section-booking--input::-webkit-input-placeholder {
+  color: black;
+}
+
+.section-booking .section-booking__research .section-booking--input:-ms-input-placeholder {
+  color: black;
+}
+
+.section-booking .section-booking__research .section-booking--input::-ms-input-placeholder {
+  color: black;
+}
+
+.section-booking .section-booking__research .section-booking--input::placeholder {
+  color: black;
+}
+
+.section-booking__text {
+  padding: 2rem;
+  text-align: center;
+}
+
+.section-booking__text--h2 {
+  padding-bottom: 1rem;
+}
+
+.section-booking__text--p {
+  margin-right: 20px;
+}
+
+.section-booking__position {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-booking__position--button {
+  background-color: #FF79DA;
+  height: 2rem;
+  border-radius: 2rem;
+  color: white;
+  border-color: #FF79DA;
 }
 /*# sourceMappingURL=style.css.map */

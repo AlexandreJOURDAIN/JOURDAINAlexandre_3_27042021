@@ -1,0 +1,12 @@
+.section-booking__position
+{
+    width:auto;
+    display: flex;
+    justify-content: center;
+
+    &--button{
+        @include button_pink
+        
+    }
+    
+}
