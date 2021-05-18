@@ -1,15 +1,18 @@
 .section-booking {
 	width: auto;
 	height: auto;
-	background-color: $color-backgroung;
+	background-color:lighten(#d9d9d9,10% );
 	
 	.section-booking__research{
 		display: flex;
 		justify-content: center;
-		margin-left: 40px;
+		height: 3rem;
+		background-color: $color-backgroung;
+		padding-left: 4rem;
 		.section-booking--left {
 			border-style: none;
 			background-color: $color-backgroung;
+			
 		}
 		.section-booking--input{
 			@extend.section-booking--left;

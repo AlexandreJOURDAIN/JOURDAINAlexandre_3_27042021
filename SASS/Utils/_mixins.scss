@@ -11,3 +11,17 @@
 	color: white;
 	border-color:$color-secondary ;
 }
+
+@mixin image{
+	object-fit: cover;
+	width: 100%;
+}
+
+@mixin rectangle-Nouveauté{
+	width: 65px;
+	height: 20px;
+	background-color:$color-terciary;
+}
+@mixin box-shadow{
+	box-shadow: 2px 2px 14px #aaaaaa;
+}

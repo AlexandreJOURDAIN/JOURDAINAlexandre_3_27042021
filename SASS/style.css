@@ -55,12 +55,89 @@ table {
 }
 
 h2 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
 main {
   font-family: "roboto";
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.section-booking__position {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-booking__position--button {
+  background-color: #FF79DA;
+  height: 2rem;
+  border-radius: 2rem;
+  color: white;
+  border-color: #FF79DA;
+}
+
+.nav__button {
+  border-radius: 2rem;
+  height: 4.5rem;
+  width: 15rem;
+  margin-top: 1.3rem;
+  width: 90%;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.2rem;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 14px #aaaaaa;
+          box-shadow: 2px 2px 14px #aaaaaa;
+  position: relative;
+}
+
+.nav__button--p {
+  height: 1.5rem;
+  width: 1.9rem;
+  background-color: #9356DC;
+  border-radius: 50%;
+  margin-top: 0.5rem;
+  text-align: center;
+  color: white;
+  margin-left: -0.9rem;
+  padding-top: 0.3rem;
+}
+
+.nav__button--text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 3.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__button--logo {
+  font-size: 1.5rem;
+  padding-right: 1rem;
 }
 
 header {
@@ -81,7 +158,7 @@ header .header__title {
 .section-booking {
   width: auto;
   height: auto;
-  background-color: #d9d9d9;
+  background-color: #f3f3f3;
 }
 
 .section-booking .section-booking__research {
@@ -91,7 +168,9 @@ header .header__title {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 40px;
+  height: 3rem;
+  background-color: #d9d9d9;
+  padding-left: 4rem;
 }
 
 .section-booking .section-booking__research .section-booking--left, .section-booking .section-booking__research .section-booking--input {
@@ -115,6 +194,11 @@ header .header__title {
   color: black;
 }
 
+.section-booking {
+  height: 250px;
+  margin-top: 1rem;
+}
+
 .section-booking__text {
   padding: 2rem;
   text-align: center;
@@ -128,26 +212,113 @@ header .header__title {
   margin-right: 20px;
 }
 
-.section-booking__position {
-  width: auto;
+nav {
+  margin-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.section-booking__position--button {
-  background-color: #FF79DA;
-  height: 2rem;
-  border-radius: 2rem;
+.section-Restaurants {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.article-Restaurants--img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.article-Restaurants {
+  width: 90%;
+  border-radius: 20px;
+  -webkit-box-shadow: 2px 2px 14px #aaaaaa;
+          box-shadow: 2px 2px 14px #aaaaaa;
+  margin-top: 2rem;
+}
+
+.article-Restaurants--container {
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.article-Restaurants--news {
+  width: 65px;
+  height: 20px;
+  background-color: #99E2D0;
+  position: absolute;
+}
+
+.article-Restaurants--heart {
+  position: absolute;
+}
+
+footer {
+  background-color: #d9d9d9;
+  margin-top: 2rem;
+  height: 150px;
+  background-color: #272727;
+}
+
+.footer--text {
+  color: black;
+  font-family: "Shrikhand";
+  font-size: 1.5rem;
+  font-size: 1.2rem;
+  padding-left: 1rem;
   color: white;
-  border-color: #FF79DA;
 }
 
-.nav__button {
-  border-radius: 2rem;
-  height: 2.5rem;
+footer > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px;
+}
+
+footer > ul > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  color: white;
+}
+
+.footer-position--logo {
+  padding-right: 12px;
+}
+
+.footer-position--logo1 {
+  padding-right: 5px;
 }
 /*# sourceMappingURL=style.css.map */
