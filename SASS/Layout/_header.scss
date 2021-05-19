@@ -1,9 +1,9 @@
-header {
+.header {
 	width: auto;
 	min-height: 1rem;
     display: flex;
     justify-content: center;
-     .header__title {
+     &__title {
         display: flex;
         justify-content: center;
         padding-top: 1rem;

@@ -48,6 +48,7 @@ table {
   border-spacing: 0;
 }
 
+/*enlever accent et mettre en minuscule */
 .header__title, h1 {
   color: black;
   font-family: "Shrikhand";
@@ -115,7 +116,7 @@ a {
           box-shadow: 2px 2px 14px #aaaaaa;
 }
 
-.nav__button--p {
+.nav__button--number {
   height: 1.5rem;
   width: 1.9rem;
   background-color: #9356DC;
@@ -127,7 +128,7 @@ a {
   padding-top: 0.3rem;
 }
 
-.nav__button--text {
+.nav__button--title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -163,7 +164,7 @@ a {
   padding-top: 1.5rem;
 }
 
-header {
+.header {
   width: auto;
   min-height: 1rem;
   display: -webkit-box;
@@ -174,7 +175,7 @@ header {
           justify-content: center;
 }
 
-header .header__title {
+.header__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -233,15 +234,15 @@ header .header__title {
   text-align: center;
 }
 
-.section-booking__text--h2 {
+.section-booking__text--title {
   padding-bottom: 1rem;
 }
 
-.section-booking__text--p {
+.section-booking__text--subTitle {
   margin-right: 20px;
 }
 
-nav {
+.nav {
   margin-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -319,14 +320,14 @@ nav {
   width: 150px;
 }
 
-footer {
+.footer {
   background-color: #d9d9d9;
   margin-top: 2rem;
   height: 150px;
   background-color: #272727;
 }
 
-.footer--text {
+.footer__title {
   color: black;
   font-family: "Shrikhand";
   font-size: 1.5rem;
@@ -354,15 +355,16 @@ footer > ul > li {
   color: white;
 }
 
-.footer-position--logo {
-  padding-right: 12px;
+.footer__menu--logo {
+  padding-right: 10px;
 }
 
-.footer-position--logo1 {
-  padding-right: 5px;
+.footer__menu--logo1 {
+  padding-right: 4px;
 }
 
 .Position-restaurants-Pages {
+  height: 200px;
   margin-top: 1rem;
 }
 
@@ -383,6 +385,12 @@ footer > ul > li {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  position: relative;
 }
 
 .Section_Restaurants_Menu {
@@ -410,6 +418,10 @@ footer > ul > li {
   background-color: white;
   -webkit-box-shadow: 2px 2px 14px #aaaaaa;
           box-shadow: 2px 2px 14px #aaaaaa;
+}
+
+.Article_Restaurants_Menu {
+  width: 350px;
 }
 
 .Article_Restaurants_Menu--underline {

@@ -17,7 +17,7 @@
 </head>
 
 <body>
-	<header>
+	<header class="header">
 		<h1 class="header__title">Ohmyfood</h1>
 	</header>
 	<main>
@@ -31,34 +31,34 @@
 					placeholder="Paris,Belleville" />
 			</form>
 			<div class="section-booking__text">
-				<h2 class="section-booking__text--h2">Réservez le menu qui vous convient</h2>
-				<p class="section-booking__text--p">Découvrez des restaurants d'exeption, séléctionnés par nos soins</p>
+				<h2 class="section-booking__text--title">Réservez le menu qui vous convient</h2>
+				<p class="section-booking__text--subTitle">Découvrez des restaurants d'exeption, séléctionnés par nos soins</p>
 			</div>
 			<div class="section-booking__position">
 				<button class="section-booking__position--button">Explorer nos restaurants</button>
 			</div>
 		</section>
-		<nav>
+		<nav class="nav">
 			<h2>fonctionnement</h2>
 			<button class="nav__button">
-				<p class="nav__button--p">1</p>
-				<div class="nav__button--text">
+				<p class="nav__button--number">1</p>
+				<div class="nav__button--title">
 					<i class="nav__button--logo fas fa-mobile-alt"></i>
 					<h3 class="nav__button--selection">Choisissez un restaurant</h3>
 				</div>
 
 			</button>
 			<button class="nav__button">
-				<p class="nav__button--p">2</p>
-				<div class="nav__button--text">
+				<p class="nav__button--number">2</p>
+				<div class="nav__button--title">
 					<i class="nav__button--logo fas fa-list-ul"></i>
 					<h3 class="nav__button--selection">Composez votre menu</h3>
 				</div>
 
 			</button>
 			<button class="nav__button">
-				<p class="nav__button--p">3</p>
-				<div class="nav__button--text">
+				<p class="nav__button--number">3</p>
+				<div class="nav__button--title">
 					<i class="nav__button--logo fas fa-store"></i>
 					<h3 class="nav__button--selection">Dégustez au restaurant</h3>
 				</div>
@@ -73,8 +73,10 @@
 			<a href="./menu_La_palette_du_goût.html">
 			<article class="article-Restaurants">
 				<div class="article-Restaurants--container">
-					<img class="article-Restaurants--img" src="./restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+					<!--changer class restaurant__image-->
+					<img class="article-Restaurants--img" src="./image/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
 						alt="">
+						<!--changer class restaurant__image--new-->
 					<div class="article-Restaurants--news">
 						<p>Nouveau</p>
 					</div>
@@ -90,7 +92,7 @@
 			<a href="./menu_La-note_enchantée.html">
 			<article class="article-Restaurants">
 				<div class="article-Restaurants--container">
-					<img class="article-Restaurants--img" src="./restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
+					<img class="article-Restaurants--img" src="./image/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
 					<div class="article-Restaurants--news">
 						<p>Nouveau</p>
 					</div>
@@ -106,7 +108,7 @@
 			<a href="./menu_A_La_Française.html">
 			<article class="article-Restaurants">
 				<div class="article-Restaurants--container">
-					<img class="article-Restaurants--img" src="./restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+					<img class="article-Restaurants--img" src="./image/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
 						alt="">
 				</div>
 				<div class="article-Restaurants--text">
@@ -121,7 +123,7 @@
 			<article class="article-Restaurants">
 				<div class="article-Restaurants--container">
 					<img class="article-Restaurants--img"
-						src="./restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
+						src="./image/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
 				</div>
 				<div class="article-Restaurants--text">
 					<h3>le délice des sens</h3>
@@ -134,15 +136,17 @@
 
 		</section>
 	
-		<footer>
-			<h2 class="footer--text">ohmyfood</h2>
-			<ul class="footer-position">
-				<li>
-					<i class="footer-position--logo fas fa-utensils"></i>
+		<footer class="footer">
+			<h2 class="footer__title">ohmyfood</h2>
+			<!--footer-menu-->
+			<ul>
+				<li class="footer__menu">
+					<!--footer-menu-->
+					<i class="footer__menu--logo fas fa-utensils"></i>
 					<p>Proposer un restaurant</p>
 				</li>
 				<li>
-					<i class="footer-position--logo1 fas fa-hands-helping"></i>
+					<i class="footer__menu--logo1 fas fa-hands-helping"></i>
 					<p>Devenir partenaire</p>
 				</li>
 				<li>

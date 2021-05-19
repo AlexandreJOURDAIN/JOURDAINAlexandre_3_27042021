@@ -1,4 +1,5 @@
 .Position-restaurants-Pages{
+    height: 200px;
 margin-top: 1rem;
     &--image{
         width: 100%;
@@ -11,6 +12,11 @@ margin-top: 1rem;
     flex-direction: column;
     justify-content: center;
     margin-top: 1rem;
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: relative;
+
 }
 
 
@@ -25,6 +31,7 @@ margin-top: 1rem;
 }
 
 .Article_Restaurants_Menu{
+    width: 350px;
 
     &--title{
         

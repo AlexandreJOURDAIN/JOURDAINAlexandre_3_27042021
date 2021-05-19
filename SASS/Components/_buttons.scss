@@ -11,7 +11,7 @@
 .nav__button {
 	@include button-nav;
 
-	&--p {
+	&--number {
 		height: 1.5rem;
 		width: 1.9rem;
 		background-color: $color-primary;
@@ -22,7 +22,7 @@
 		margin-left: -0.9rem;
 		padding-top: 0.3rem;
 	}
-	&--text {
+	&--title {
 		display: flex;
 		padding-left: 3.5rem;
 		justify-content: center;

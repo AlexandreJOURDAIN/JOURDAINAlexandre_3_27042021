@@ -1,10 +1,10 @@
-footer{
+.footer{
     background-color:$color-backgroung;
     margin-top: 2rem;
     height: 150px;
     background-color:darken(#d9d9d9,70);
 }
-.footer--text
+.footer__title
 {
     @include logo_titre;
     font-size:1.2rem;
@@ -28,12 +28,11 @@ footer>ul>li{
    
 }
 
-.footer-position{
-
+.footer__menu{
     &--logo{
-        padding-right: 12px;
+        padding-right: 10px;
     }
     &--logo1{
-        padding-right: 5px;
+        padding-right: 4px;
     }
 }
