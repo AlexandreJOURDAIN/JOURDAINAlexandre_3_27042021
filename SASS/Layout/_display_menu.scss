@@ -1,0 +1,40 @@
+.Position-restaurants-Pages{
+margin-top: 1rem;
+    &--image{
+        width: 100%;
+    }
+}
+
+.Section_Restaurants_global{
+    background-color: $color-bakgroung-light;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+
+.Section_Restaurants_Menu{
+    background-color: $color-bakgroung-light;
+    margin-top: 1rem;
+    
+}
+
+.Button_Restaurants_Menu{
+    @include button-nav
+}
+
+.Article_Restaurants_Menu{
+
+    &--title{
+        
+    }
+    &--underline{
+        height: 0.2rem;
+        width:3rem;
+        background-color: $color-terciary;
+        margin-top: 0.5rem;
+
+    }
+
+}
