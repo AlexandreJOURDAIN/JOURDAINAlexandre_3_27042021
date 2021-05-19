@@ -1,6 +1,8 @@
 header {
 	width: auto;
 	min-height: 1rem;
+    display: flex;
+    justify-content: center;
      .header__title {
         display: flex;
         justify-content: center;

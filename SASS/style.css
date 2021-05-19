@@ -68,6 +68,11 @@ h3 {
   font-weight: bold;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 .section-booking__position {
   width: auto;
   display: -webkit-box;
@@ -85,6 +90,7 @@ h3 {
   border-radius: 2rem;
   color: white;
   border: none;
+  width: 150px;
 }
 
 .nav__button {
@@ -160,6 +166,12 @@ h3 {
 header {
   width: auto;
   min-height: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header .header__title {
@@ -271,6 +283,7 @@ nav {
   -webkit-box-shadow: 2px 2px 14px #aaaaaa;
           box-shadow: 2px 2px 14px #aaaaaa;
   margin-top: 2rem;
+  margin-left: 1rem;
 }
 
 .article-Restaurants--container {
@@ -294,6 +307,16 @@ nav {
 
 .article-Restaurants--heart {
   position: absolute;
+}
+
+.Section-Button_Restaurants {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  height: 2rem;
+  border-radius: 2rem;
+  color: white;
+  border: none;
+  width: 150px;
 }
 
 footer {
