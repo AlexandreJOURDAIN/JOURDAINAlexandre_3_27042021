@@ -1,5 +1,4 @@
-* html,
-body, div, span, applet, object, iframe,
+* html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -40,7 +39,7 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: "";
+  content: '';
   content: none;
 }
 
@@ -77,17 +76,24 @@ a {
 
 .section-booking__position {
   width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .section-booking__position--button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   height: 2.3rem;
   border-radius: 2rem;
   color: white;
   border: none;
   width: 13rem;
-  box-shadow: 2px 2px 14px #aaaaaa;
+  -webkit-box-shadow: 2px 2px 14px #aaaaaa;
+          box-shadow: 2px 2px 14px #aaaaaa;
 }
 
 .nav__button {
@@ -97,15 +103,23 @@ a {
   margin-top: 1.3rem;
   width: 90%;
   border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 1.2rem;
   background-color: #f3f3f3;
-  box-shadow: 2px 2px 14px #aaaaaa;
+  -webkit-box-shadow: 2px 2px 14px #aaaaaa;
+          box-shadow: 2px 2px 14px #aaaaaa;
   border: none;
   margin-left: 1rem;
 }
+
 .nav__button--number {
   height: 1.7rem;
   width: 2rem;
@@ -117,28 +131,43 @@ a {
   padding-top: 0.3rem;
   font-size: 20px;
 }
+
 .nav__button--title {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-left: 1rem;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .nav__button--logo {
   font-size: 1.5rem;
   padding-right: 1rem;
   color: gray;
 }
+
 .nav__button:hover {
   background-color: #f2eafb;
 }
 
 .button__restaurants_menu--text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: left;
   width: 340px;
 }
+
 .button__restaurants_menu--price {
   padding-left: 1rem;
   padding-top: 1.5rem;
@@ -147,12 +176,21 @@ a {
 .header {
   width: auto;
   min-height: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .header__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 1rem;
 }
 
@@ -161,17 +199,36 @@ a {
   height: auto;
   background-color: #f3f3f3;
 }
+
 .section-booking .section-booking__research {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 3rem;
   background-color: #d9d9d9;
   padding-left: 4rem;
 }
+
 .section-booking .section-booking__research .section-booking--left, .section-booking .section-booking__research .section-booking--input {
   border-style: none;
   background-color: #d9d9d9;
 }
+
+.section-booking .section-booking__research .section-booking--input::-webkit-input-placeholder {
+  color: black;
+}
+
+.section-booking .section-booking__research .section-booking--input:-ms-input-placeholder {
+  color: black;
+}
+
+.section-booking .section-booking__research .section-booking--input::-ms-input-placeholder {
+  color: black;
+}
+
 .section-booking .section-booking__research .section-booking--input::placeholder {
   color: black;
 }
@@ -180,36 +237,55 @@ a {
   height: 300px;
   margin-top: 1rem;
 }
+
 .section-booking__text {
   padding: 2rem;
   text-align: center;
 }
+
 .section-booking__text--title {
   padding-bottom: 1rem;
 }
+
 .section-booking__text--subTitle {
   margin-right: 20px;
 }
 
 .nav {
   margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
 }
 
 .section__restaurants {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-bottom: 3rem;
 }
+
 .section__restaurants--title {
   margin-left: 1rem;
 }
 
 .restaurants__img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
 }
 
@@ -217,17 +293,24 @@ a {
   width: 90%;
   border-radius: 20px;
   height: 200px;
-  box-shadow: 2px 2px 14px #aaaaaa;
+  -webkit-box-shadow: 2px 2px 14px #aaaaaa;
+          box-shadow: 2px 2px 14px #aaaaaa;
   margin-top: 2rem;
   margin-left: 1rem;
 }
+
 .article__restaurants--container {
   height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   overflow: hidden;
   border-radius: 20px;
 }
+
 .article__restaurants--news {
   width: 65px;
   height: 20px;
@@ -243,22 +326,30 @@ a {
 }
 
 .Section-Button_Restaurants {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   height: 2.3rem;
   border-radius: 2rem;
   color: white;
   border: none;
   width: 13rem;
-  box-shadow: 2px 2px 14px #aaaaaa;
+  -webkit-box-shadow: 2px 2px 14px #aaaaaa;
+          box-shadow: 2px 2px 14px #aaaaaa;
 }
 
 .restaurants__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0.7rem;
 }
+
 .restaurants__text--left {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
+
 .restaurants__text--right {
   font-size: 1.8rem;
 }
@@ -280,19 +371,28 @@ a {
 }
 
 .footer__position {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 20px;
 }
 
 .footer__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 10px;
   color: white;
 }
+
 .footer__menu--logo {
   padding-right: 10px;
 }
+
 .footer__menu--logo1 {
   padding-right: 4px;
 }
@@ -301,14 +401,18 @@ a {
   height: 220px;
   margin-top: 1rem;
 }
+
 .restaurants__pages--image {
   width: 100%;
 }
 
 .position__text_global {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 1rem;
 }
+
 .position__text_global--heart {
   font-size: 1.8rem;
   margin-left: 20px;
@@ -316,11 +420,20 @@ a {
 
 .restaurants__global {
   background-color: #f3f3f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 1rem;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   position: relative;
@@ -337,12 +450,19 @@ a {
   margin-top: 1.3rem;
   width: 95%;
   border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 1.2rem;
   background-color: #f3f3f3;
-  box-shadow: 2px 2px 14px #aaaaaa;
+  -webkit-box-shadow: 2px 2px 14px #aaaaaa;
+          box-shadow: 2px 2px 14px #aaaaaa;
   border: none;
   margin-left: 1rem;
 }
@@ -350,6 +470,7 @@ a {
 .restaurants__menu {
   width: 350px;
 }
+
 .restaurants__menu--underline {
   height: 0.2rem;
   width: 3rem;
@@ -358,14 +479,20 @@ a {
 }
 
 .header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .header__menu--arrow {
   font-size: 1.5rem;
   margin-top: 2px;
   color: black;
 }
+
 .header__menu--title {
   width: 90%;
   text-align: center;
@@ -373,18 +500,24 @@ a {
 
 .order__restaurants {
   width: 100%;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 2rem;
 }
+
 .order__restaurants--pink {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   height: 2.3rem;
   border-radius: 2rem;
   color: white;
   border: none;
   width: 13rem;
-  box-shadow: 2px 2px 14px #aaaaaa;
+  -webkit-box-shadow: 2px 2px 14px #aaaaaa;
+          box-shadow: 2px 2px 14px #aaaaaa;
 }
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */

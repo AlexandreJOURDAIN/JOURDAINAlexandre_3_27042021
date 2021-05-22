@@ -1,12 +1,21 @@
-.Position-restaurants-Pages{
-    height: 200px;
+.restaurants__pages{
+    height: 220px;
 margin-top: 1rem;
     &--image{
         width: 100%;
     }
 }
 
-.Section_Restaurants_global{
+.position__text_global{
+    display: flex;
+    margin-top: 1rem;
+    &--heart{
+        font-size: 1.8rem;
+        margin-left: 20px;
+    }
+}
+
+.restaurants__global{
     background-color: $color-bakgroung-light;
     display:flex;
     flex-direction: column;
@@ -20,17 +29,17 @@ margin-top: 1rem;
 }
 
 
-.Section_Restaurants_Menu{
+.restaurants__menu_global{
     background-color: $color-bakgroung-light;
     margin-top: 1rem;
     
 }
 
-.Button_Restaurants_Menu{
-    @include button-nav
+.button__restaurants_menu{
+    @include button-menu
 }
 
-.Article_Restaurants_Menu{
+.restaurants__menu{
     width: 350px;
 
     &--title{
@@ -44,4 +53,30 @@ margin-top: 1rem;
 
     }
 
+}
+
+.header__menu{
+    display: flex;
+    justify-content: center;
+    &--arrow{
+        font-size: 1.5rem;
+        margin-top: 2px;
+        color:black;
+        
+    }
+    &--title{
+        width: 90%;
+        text-align: center;
+    }
+
+}
+
+.order__restaurants{
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 2rem;
+    &--pink{
+        @include button_pink;
+    }
 }

@@ -1,7 +1,10 @@
-.section-restaurants{
+.section__restaurants{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-bottom: 3rem;
+    &--title{
+        margin-left: 1rem;
+    }
 }
 
 
@@ -12,6 +15,7 @@
 .article__restaurants{
     width: 90%;
     border-radius: 20px;
+    height: 200px;
     @include box-shadow;
     margin-top: 2rem;
     margin-left: 1rem;
@@ -25,13 +29,29 @@
      &--news{
          @include rectangle-Nouveauté;
          position: absolute;
+         margin-left: 240px;
+         margin-bottom: 100px;
+         height: 21px;
+         padding-top: 0.6rem;
+         width: 80px;
+         text-align: center;
+         color:darken($color-terciary,40%)
      }
-     &--heart{
-         position: absolute;
-     }
+     
 }
 
 .Section-Button_Restaurants{
     @include button_pink;
 
+}
+
+.restaurants__text{
+    display: flex;
+    margin: 0.7rem;
+      &--left{
+          flex-grow: 1;
+      }
+      &--right{
+          font-size: 1.8rem;
+      }
 }

@@ -12,195 +12,193 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./SASS/style.css" />
+    <link rel="stylesheet" href="./public/css/style.css" />
     <script src="https://kit.fontawesome.com/4fa80a1b2e.js" crossorigin="anonymous"></script>
 </head>
 
-<header>
+<header class="header__menu">
     <a href="./index.html">
-    <i class="fas fa-long-arrow-alt-left"></i>
-</a>
-    <h1 class="header__title">Ohmyfood</h1>
+        <i class="header__menu--arrow fas fa-arrow-left"></i>
+    </a>
+    <div class="header__menu--title">
+        <h1>Ohmyfood</h1>
+    </div>
 </header>
 <main>
-    <section class="Position-restaurants-Pages">
-        <img class="Position-restaurants-Pages--image" src="./image/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+    <section class="restaurants__pages">
+        <img class="restaurants__pages--image"
+            src="/public/image/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
             alt="image_a_la_Française">
     </section>
 
-    <div class="Section_Restaurants_global">
-        <h1>Le délice des sens</h1>
+    <div class="restaurants__global">
+        <div class="position__text_global">
+            <h1>Le délice des sens</h1>
+            <i class="position__text_global--heart far fa-heart"></i>
+        </div>
 
-        <section class="Section_Restaurants_Menu">
-            <article class="Article_Restaurants_Menu">
-                <p class="Article_Restaurants_Menu--title">ENTREES</p>
-                <div class="Article_Restaurants_Menu--underline"></div>
-                <button class="Button_Restaurants_Menu">
-                    <div class="Button_Restaurants_Menu--text">
-                        <h3>Tartare de poulpe acidulé</h3>
-                        <p>au zests d'orange</p>
+        <section class="restaurants__menu_global">
+            <article class="restaurants__menu">
+                <p class="restaurants__menu--title">ENTREES</p>
+                <div class="restaurants__menu--underline"></div>
+                <button class="button__restaurants_menu">
+                    <div class="button__restaurants_menu--text">
+                        <h3>Tartare de thon</h3>
+                        <p>Assaisonné au yuzu</p>
                     </div>
-                    <div class="Button_Restaurants_Menu--price">
+                    <div class="button__restaurants_menu--price">
                         <p>25€</p>
 
                     </div>
                 </button>
 
             </article>
-            <article class="Article_Restaurants_Menu">
+            <article class="restaurants__menu">
 
 
-                <button class="Button_Restaurants_Menu">
-                    <div class="Button_Restaurants_Menu--text">
-                        <h3>Velouté de légume d'antan</h3>
-                        <p>Carotte,panais,topinambour</p>
+                <button class="button__restaurants_menu">
+                    <div class="button__restaurants_menu--text">
+                        <h3>Bouchée de homard croustillant</h3>
+                        <p>Et sa farandole de petits légumes</p>
                     </div>
-                    <div class="Button_Restaurants_Menu--price">
+                    <div class="button__restaurants_menu--price">
                         <p>35€</p>
 
                     </div>
                 </button>
 
             </article>
-            <article class="Article_Restaurants_Menu">
+            <article class="restaurants__menu">
 
 
-                <button class="Button_Restaurants_Menu">
-                    <div class="Button_Restaurants_Menu--text">
-                        <h3>Soupe à l'oignon</h3>
-                        <p>Revisitée</p>
+                <button class="button__restaurants_menu">
+                    <div class="button__restaurants_menu--text">
+                        <h3>Veolouté de cèpes</h3>
+                        <p>Aux truffes</p>
                     </div>
-                    <div class="Button_Restaurants_Menu--price">
+                    <div class="button__restaurants_menu--price">
                         <p>20€</p>
 
                     </div>
                 </button>
 
             </article>
+            <section class="restaurants__menu_global">
+                <article class="restaurants__menu">
+                    <p class="restaurants__menu--title">PLATS</p>
+                    <div class="restaurants__menu--underline"></div>
+                    <button class="button__restaurants_menu">
+                        <div class="button__restaurants_menu--text">
+                            <h3>Poulet rôti aux herbes de provence</h3>
+                            <p>Et sa crème de truffe</p>
+                        </div>
+                        <div class="button__restaurants_menu--price">
+                            <p>40€</p>
+
+                        </div>
+                    </button>
+
+                </article>
+                <article class="restaurants__menu">
 
 
+                    <button class="button__restaurants_menu">
+                        <div class="button__restaurants_menu--text">
+                            <h3>Langouste rôtie</h3>
+                            <p>Et ses légumes de saison</p>
+                        </div>
+                        <div class="button__restaurants_menu--price">
+                            <p>35€</p>
 
-        </section>
-        <section class="Section_Restaurants_Menu">
-            <article class="Article_Restaurants_Menu">
-                <p class="Article_Restaurants_Menu--title">PLATS</p>
-                <div class="Article_Restaurants_Menu--underline"></div>
-                <button class="Button_Restaurants_Menu">
-                    <div class="Button_Restaurants_Menu--text">
-                        <h3>Tartare de poulpe acidulé</h3>
-                        <p>au zests d'orange</p>
-                    </div>
-                    <div class="Button_Restaurants_Menu--price">
-                        <p>25€</p>
+                        </div>
+                    </button>
 
-                    </div>
-                </button>
-
-            </article>
-            <article class="Article_Restaurants_Menu">
+                </article>
+                <article class="restaurants__menu">
 
 
-                <button class="Button_Restaurants_Menu">
-                    <div class="Button_Restaurants_Menu--text">
-                        <h3>Velouté de légume d'antan</h3>
-                        <p>Carotte,panais,topinambour</p>
-                    </div>
-                    <div class="Button_Restaurants_Menu--price">
-                        <p>35€</p>
+                    <button class="button__restaurants_menu">
+                        <div class="button__restaurants_menu--text">
+                            <h3>Côte de boeuf angus</h3>
+                            <p>Et sa purée de panais</p>
+                        </div>
+                        <div class="button__restaurants_menu--price">
+                            <p>44€</p>
 
-                    </div>
-                </button>
+                        </div>
+                    </button>
 
-            </article>
-            <article class="Article_Restaurants_Menu">
+                </article>
+                <section class="restaurants__menu_global">
+                    <article class="restaurants__menu">
+                        <p class="restaurants__menu--title">DESSERTS</p>
+                        <div class="restaurants__menu--underline"></div>
+                        <button class="button__restaurants_menu">
+                            <div class="button__restaurants_menu--text">
+                                <h3>Farandole de desserts</h3>
+                                <p>Du chef</p>
+                            </div>
+                            <div class="button__restaurants_menu--price">
+                                <p>18€</p>
 
+                            </div>
+                        </button>
 
-                <button class="Button_Restaurants_Menu">
-                    <div class="Button_Restaurants_Menu--text">
-                        <h3>Soupe à l'oignon</h3>
-                        <p>Revisitée</p>
-                    </div>
-                    <div class="Button_Restaurants_Menu--price">
-                        <p>20€</p>
-
-                    </div>
-                </button>
-
-            </article>
-
-
-
-        </section>
-        <section class="Section_Restaurants_Menu">
-            <article class="Article_Restaurants_Menu">
-                <p class="Article_Restaurants_Menu--title">DESSERTS</p>
-                <div class="Article_Restaurants_Menu--underline"></div>
-                <button class="Button_Restaurants_Menu">
-                    <div class="Button_Restaurants_Menu--text">
-                        <h3>Tartare de poulpe acidulé</h3>
-                        <p>au zests d'orange</p>
-                    </div>
-                    <div class="Button_Restaurants_Menu--price">
-                        <p>25€</p>
-
-                    </div>
-                </button>
-
-            </article>
-            <article class="Article_Restaurants_Menu">
+                    </article>
+                    <article class="restaurants__menu">
 
 
-                <button class="Button_Restaurants_Menu">
-                    <div class="Button_Restaurants_Menu--text">
-                        <h3>Velouté de légume d'antan</h3>
-                        <p>Carotte,panais,topinambour</p>
-                    </div>
-                    <div class="Button_Restaurants_Menu--price">
-                        <p>35€</p>
+                        <button class="button__restaurants_menu">
+                            <div class="button__restaurants_menu--text">
+                                <h3>Créme brulée</h3>
+                                <p>Revisitée</p>
+                            </div>
+                            <div class="button__restaurants_menu--price">
+                                <p>22€</p>
 
-                    </div>
-                </button>
+                            </div>
+                        </button>
 
-            </article>
-            <article class="Article_Restaurants_Menu">
-
-
-                <button class="Button_Restaurants_Menu">
-                    <div class="Button_Restaurants_Menu--text">
-                        <h3>Soupe à l'oignon</h3>
-                        <p>Revisitée</p>
-                    </div>
-                    <div class="Button_Restaurants_Menu--price">
-                        <p>20€</p>
-
-                    </div>
-                </button>
-
-            </article>
+                    </article>
+                    <article class="restaurants__menu">
 
 
+                        <button class="button__restaurants_menu">
+                            <div class="button__restaurants_menu--text">
+                                <h3>Tiramisu</h3>
+                                <p>A la noisette</p>
+                            </div>
+                            <div class="button__restaurants_menu--price">
+                                <p>23€</p>
 
-        </section>
-        <button class="Section-Button_Restaurants">commander</button>
+                            </div>
+                        </button>
+
+                    </article>
+
+                </section>
+                <div class="order__restaurants">
+                    <button class="order__restaurants--pink">commander</button>
+                </div>
     </div>
 
     <footer class="footer">
         <h2 class="footer__title">ohmyfood</h2>
         <!--footer-menu-->
-        <ul class="footer__menu">
-            <li>
+        <ul class="footer__position">
+            <li class="footer__menu">
                 <!--footer-menu-->
                 <i class="footer__menu--logo fas fa-utensils"></i>
                 <p>Proposer un restaurant</p>
             </li>
-            <li>
+            <li class="footer__menu">
                 <i class="footer__menu--logo1 fas fa-hands-helping"></i>
                 <p>Devenir partenaire</p>
             </li>
-            <li>
+            <li class="footer__menu">
                 <p>Mentions légales</p>
             </li>
-            <li>
+            <li class="footer__menu">
                 <p>Contact</p>
             </li>
         </ul>

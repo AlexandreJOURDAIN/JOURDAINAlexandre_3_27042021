@@ -1,16 +1,18 @@
 @mixin logo_titre {
     color:black;
 	font-family: "Shrikhand";
-	font-size: 1.5rem
+	font-size: 1.8rem
 }
 
 @mixin button_pink {
 	background:linear-gradient($color-secondary,$color-primary);
-	height: 2rem;
+	height: 2.3rem;
     border-radius: 2rem;
 	color: white;
 	border:none;
-    width: 150px;
+    width: 13rem;
+    box-shadow: 2px 2px 14px #aaaaaa;
+
 
 }
 
@@ -39,7 +41,24 @@
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 1.2rem;
-    background-color:white;
+    background-color:$color-bakgroung-light;
     box-shadow: 2px 2px 14px #aaaaaa;
-	
+	border: none;
+    margin-left: 1rem;
+}
+
+@mixin button-menu{
+    height: 4.5rem;
+    width: 15rem;
+    margin-top: 1.3rem;
+    width: 95%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1.2rem;
+    background-color:$color-bakgroung-light;
+    box-shadow: 2px 2px 14px #aaaaaa;
+	border: none;
+    margin-left: 1rem;
 }

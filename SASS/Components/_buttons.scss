@@ -10,21 +10,21 @@
 
 .nav__button {
 	@include button-nav;
-
+   
 	&--number {
-		height: 1.5rem;
-		width: 1.9rem;
+		height: 1.7rem;
+		width: 2rem;
 		background-color: $color-primary;
 		border-radius: 50%;
-		margin-top: 0.5rem;
 		text-align: center;
 		color: white;
 		margin-left: -0.9rem;
 		padding-top: 0.3rem;
+		font-size: 20px;
 	}
 	&--title {
 		display: flex;
-		padding-left: 3.5rem;
+		padding-left: 1rem;
 		justify-content: center;
 		display: flex;
 		align-items: center;
@@ -33,17 +33,21 @@
 	&--logo {
 		font-size: 1.5rem;
 		padding-right: 1rem;
+		color:gray;
+	}
+	&:hover{
+		background-color:lighten($color-primary,35%)
 	}
 }
 
 
-.Button_Restaurants_Menu{
+.button__restaurants_menu{
 
     &--text{
         display: flex;
         flex-direction: column;
         text-align: left;
-        width: 90%;
+        width: 340px;
     }
     &--price{
         padding-left: 1rem;

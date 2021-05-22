@@ -1,7 +1,6 @@
 .footer{
     background-color:$color-backgroung;
-    margin-top: 2rem;
-    height: 150px;
+    height: 180px;
     background-color:darken(#d9d9d9,70);
 }
 .footer__title
@@ -10,10 +9,11 @@
     font-size:1.2rem;
     padding-left:1rem;
     color: white;
+    padding-top: 1rem;
 }
 
 
-footer>ul{
+.footer__position{
     display: flex;
     flex-direction: column;
     margin: 20px;
@@ -21,14 +21,11 @@ footer>ul{
 
 }
 
-footer>ul>li{
+
+.footer__menu{
     display: flex;
     margin-top: 10px;
     color: white;
-   
-}
-
-.footer__menu{
     &--logo{
         padding-right: 10px;
     }
