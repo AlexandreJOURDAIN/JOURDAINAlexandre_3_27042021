@@ -1,0 +1,19 @@
+{
+  "name": "jourdainalexandre_3_27042021",
+  "version": "1.0.0",
+  "description": "JOURDAINAlexandre_3_27042021",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexandreJOURDAIN/JOURDAINAlexandre_3_27042021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexandreJOURDAIN/JOURDAINAlexandre_3_27042021/issues"
+  },
+  "homepage": "https://github.com/AlexandreJOURDAIN/JOURDAINAlexandre_3_27042021#readme"
+}

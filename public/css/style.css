@@ -1,4 +1,5 @@
-* html, body, div, span, applet, object, iframe,
+* html,
+body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -39,7 +40,7 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -76,16 +77,10 @@ a {
 
 .section-booking__position {
   width: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .section-booking__position--button {
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   height: 2rem;
   border-radius: 2rem;
@@ -101,21 +96,13 @@ a {
   margin-top: 1.3rem;
   width: 90%;
   border-radius: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-start;
+  align-items: center;
   margin-bottom: 1.2rem;
   background-color: white;
-  -webkit-box-shadow: 2px 2px 14px #aaaaaa;
-          box-shadow: 2px 2px 14px #aaaaaa;
+  box-shadow: 2px 2px 14px #aaaaaa;
 }
-
 .nav__button--number {
   height: 1.5rem;
   width: 1.9rem;
@@ -127,38 +114,24 @@ a {
   margin-left: -0.9rem;
   padding-top: 0.3rem;
 }
-
 .nav__button--title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding-left: 3.5rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .nav__button--logo {
   font-size: 1.5rem;
   padding-right: 1rem;
 }
 
 .Button_Restaurants_Menu--text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   text-align: left;
   width: 90%;
 }
-
 .Button_Restaurants_Menu--price {
   padding-left: 1rem;
   padding-top: 1.5rem;
@@ -167,21 +140,12 @@ a {
 .header {
   width: auto;
   min-height: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .header__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding-top: 1rem;
 }
 
@@ -190,36 +154,17 @@ a {
   height: auto;
   background-color: #f3f3f3;
 }
-
 .section-booking .section-booking__research {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   height: 3rem;
   background-color: #d9d9d9;
   padding-left: 4rem;
 }
-
 .section-booking .section-booking__research .section-booking--left, .section-booking .section-booking__research .section-booking--input {
   border-style: none;
   background-color: #d9d9d9;
 }
-
-.section-booking .section-booking__research .section-booking--input::-webkit-input-placeholder {
-  color: black;
-}
-
-.section-booking .section-booking__research .section-booking--input:-ms-input-placeholder {
-  color: black;
-}
-
-.section-booking .section-booking__research .section-booking--input::-ms-input-placeholder {
-  color: black;
-}
-
 .section-booking .section-booking__research .section-booking--input::placeholder {
   color: black;
 }
@@ -228,90 +173,61 @@ a {
   height: 250px;
   margin-top: 1rem;
 }
-
 .section-booking__text {
   padding: 2rem;
   text-align: center;
 }
-
 .section-booking__text--title {
   padding-bottom: 1rem;
 }
-
 .section-booking__text--subTitle {
   margin-right: 20px;
 }
 
 .nav {
   margin-top: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section-restaurants {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .restaurants__img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
 }
 
 .article__restaurants {
   width: 90%;
   border-radius: 20px;
-  -webkit-box-shadow: 2px 2px 14px #aaaaaa;
-          box-shadow: 2px 2px 14px #aaaaaa;
+  box-shadow: 2px 2px 14px #aaaaaa;
   margin-top: 2rem;
   margin-left: 1rem;
 }
-
 .article__restaurants--container {
   height: 150px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   overflow: hidden;
   border-radius: 20px;
 }
-
 .article__restaurants--news {
   width: 65px;
   height: 20px;
   background-color: #99E2D0;
   position: absolute;
 }
-
 .article__restaurants--heart {
   position: absolute;
 }
 
 .Section-Button_Restaurants {
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   height: 2rem;
   border-radius: 2rem;
@@ -337,19 +253,12 @@ a {
 }
 
 footer > ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin: 20px;
 }
 
 footer > ul > li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 10px;
   color: white;
@@ -358,7 +267,6 @@ footer > ul > li {
 .footer__menu--logo {
   padding-right: 10px;
 }
-
 .footer__menu--logo1 {
   padding-right: 4px;
 }
@@ -367,27 +275,17 @@ footer > ul > li {
   height: 200px;
   margin-top: 1rem;
 }
-
 .Position-restaurants-Pages--image {
   width: 100%;
 }
 
 .Section_Restaurants_global {
   background-color: #f3f3f3;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   margin-top: 1rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   position: relative;
@@ -405,29 +303,22 @@ footer > ul > li {
   margin-top: 1.3rem;
   width: 90%;
   border-radius: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-start;
+  align-items: center;
   margin-bottom: 1.2rem;
   background-color: white;
-  -webkit-box-shadow: 2px 2px 14px #aaaaaa;
-          box-shadow: 2px 2px 14px #aaaaaa;
+  box-shadow: 2px 2px 14px #aaaaaa;
 }
 
 .Article_Restaurants_Menu {
   width: 350px;
 }
-
 .Article_Restaurants_Menu--underline {
   height: 0.2rem;
   width: 3rem;
   background-color: #99E2D0;
   margin-top: 0.5rem;
 }
+
 /*# sourceMappingURL=style.css.map */
