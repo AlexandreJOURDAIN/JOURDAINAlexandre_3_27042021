@@ -259,7 +259,7 @@ a {
           align-items: center;
 }
 
-.section-Restaurants {
+.section-restaurants {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -272,13 +272,13 @@ a {
           align-items: center;
 }
 
-.article-Restaurants--img {
+.restaurants__img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
 }
 
-.article-Restaurants {
+.article__restaurants {
   width: 90%;
   border-radius: 20px;
   -webkit-box-shadow: 2px 2px 14px #aaaaaa;
@@ -287,7 +287,7 @@ a {
   margin-left: 1rem;
 }
 
-.article-Restaurants--container {
+.article__restaurants--container {
   height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -299,14 +299,14 @@ a {
   border-radius: 20px;
 }
 
-.article-Restaurants--news {
+.article__restaurants--news {
   width: 65px;
   height: 20px;
   background-color: #99E2D0;
   position: absolute;
 }
 
-.article-Restaurants--heart {
+.article__restaurants--heart {
   position: absolute;
 }
 

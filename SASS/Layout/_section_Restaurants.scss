@@ -1,15 +1,15 @@
-.section-Restaurants{
+.section-restaurants{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 
-.article-Restaurants--img{
+.restaurants__img{
     @include image;
 }
 
-.article-Restaurants{
+.article__restaurants{
     width: 90%;
     border-radius: 20px;
     @include box-shadow;
