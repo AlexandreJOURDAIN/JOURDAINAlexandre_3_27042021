@@ -29,7 +29,7 @@
      &--news{
          @include rectangle-Nouveauté;
          position: absolute;
-         margin-left: 240px;
+         left: 260px;
          margin-bottom: 100px;
          height: 21px;
          padding-top: 0.6rem;
@@ -54,4 +54,19 @@
       &--right{
           font-size: 1.8rem;
       }
+}
+
+/* modif à faire */
+
+.article__restaurants--heart{
+    transform: scale(1);
+    transition:all 1s ease-out;
+    transition-duration: 1000ms;
+    &:hover{
+        background-color:red;
+    }
+}
+
+.article__restaurants--heart ::after{
+    content:"\f004";
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -87,11 +88,11 @@ a {
 .section-booking__position--button {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
-  height: 2.3rem;
+  height: 3rem;
   border-radius: 2rem;
   color: white;
   border: none;
-  width: 13rem;
+  width: 11rem;
   -webkit-box-shadow: 2px 2px 14px #aaaaaa;
           box-shadow: 2px 2px 14px #aaaaaa;
 }
@@ -316,7 +317,7 @@ a {
   height: 20px;
   background-color: #99E2D0;
   position: absolute;
-  margin-left: 240px;
+  left: 260px;
   margin-bottom: 100px;
   height: 21px;
   padding-top: 0.6rem;
@@ -328,11 +329,11 @@ a {
 .Section-Button_Restaurants {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
-  height: 2.3rem;
+  height: 3rem;
   border-radius: 2rem;
   color: white;
   border: none;
-  width: 13rem;
+  width: 11rem;
   -webkit-box-shadow: 2px 2px 14px #aaaaaa;
           box-shadow: 2px 2px 14px #aaaaaa;
 }
@@ -352,6 +353,24 @@ a {
 
 .restaurants__text--right {
   font-size: 1.8rem;
+}
+
+/* modif à faire */
+.article__restaurants--heart {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  -webkit-transition-duration: 1000ms;
+          transition-duration: 1000ms;
+}
+
+.article__restaurants--heart:hover {
+  background-color: red;
+}
+
+.article__restaurants--heart ::after {
+  content: "\f004";
 }
 
 .footer {
@@ -512,11 +531,11 @@ a {
 .order__restaurants--pink {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
-  height: 2.3rem;
+  height: 3rem;
   border-radius: 2rem;
   color: white;
   border: none;
-  width: 13rem;
+  width: 11rem;
   -webkit-box-shadow: 2px 2px 14px #aaaaaa;
           box-shadow: 2px 2px 14px #aaaaaa;
 }
