@@ -357,20 +357,27 @@ a {
 
 /* modif à faire */
 .article__restaurants--heart {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: all 1s ease-out;
-  transition: all 1s ease-out;
-  -webkit-transition-duration: 1000ms;
-          transition-duration: 1000ms;
+  position: relative;
+  z-index: 1;
 }
 
-.article__restaurants--heart:hover {
-  background-color: red;
+.article__restaurants--heart:hover::after {
+  opacity: 1;
 }
 
-.article__restaurants--heart ::after {
+.article__restaurants--heart::after {
+  font-weight: 900;
   content: "\f004";
+  position: absolute;
+  -webkit-transition: opacity 650ms;
+  transition: opacity 650ms;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  color: #9356DC;
+  z-index: -1;
 }
 
 .footer {

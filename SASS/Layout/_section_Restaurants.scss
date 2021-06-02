@@ -59,14 +59,28 @@
 /* modif à faire */
 
 .article__restaurants--heart{
-    transform: scale(1);
-    transition:all 1s ease-out;
-    transition-duration: 1000ms;
-    &:hover{
-        background-color:red;
+    
+    position: relative;
+    z-index: 1;
+     &:hover{
+         &::after{
+             opacity: 1;
+            }
     }
+    
+    &::after{
+        font-weight: 900;
+        content:"\f004";
+        position: absolute;
+        transition: opacity 650ms;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        opacity: 0;
+        color:$color-primary;
+        z-index: -1;
+    }
+    
 }
-
-.article__restaurants--heart ::after{
-    content:"\f004";
-}
+    
