@@ -15,6 +15,7 @@ margin-top: 1rem;
     }
 }
 
+
 .restaurants__global{
     background-color: $color-bakgroung-light;
     display:flex;
@@ -79,4 +80,30 @@ margin-top: 1rem;
     &--pink{
         @include button_pink;
     }
+}
+
+ /*a modif*/
+ .position__text_global--heart{
+    position: relative;
+    z-index: 1;
+     &:hover{
+         &::after{
+             opacity: 1;
+            }
+    }
+    
+    &::after{
+        font-weight: 900;
+        content:"\f004";
+        position: absolute;
+        transition: opacity 650ms;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        opacity: 0;
+        color:$color-primary;
+        z-index: -1;
+    }
+    
 }

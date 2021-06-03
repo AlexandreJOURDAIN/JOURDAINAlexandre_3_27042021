@@ -27,7 +27,7 @@
          border-radius: 20px;
      }
      &--news{
-         @include rectangle-Nouveauté;
+         @include rectangle-nouveaute;
          position: absolute;
          left: 260px;
          margin-bottom: 100px;
@@ -78,8 +78,9 @@
         right: 0;
         left: 0;
         opacity: 0;
-        color:$color-primary;
         z-index: -1;
+        background-clip:text;
+        background:linear-gradient($color-secondary,$color-primary);
     }
     
 }

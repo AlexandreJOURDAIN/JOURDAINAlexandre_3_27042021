@@ -10,6 +10,7 @@
 
 .nav__button {
 	@include button-nav;
+	margin: 1rem;
    
 	&--number {
 		height: 1.7rem;
