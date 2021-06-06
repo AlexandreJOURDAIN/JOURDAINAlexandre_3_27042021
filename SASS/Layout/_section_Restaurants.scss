@@ -1,87 +1,88 @@
-.section__restaurants{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 3rem;
-    &--title{
-        margin-left: 1rem;
+.section__restaurants {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 3rem;
+	&--title {
+		margin-left: 1rem;
+	}
+}
+
+.restaurants__img {
+	@include image;
+}
+
+.article__restaurants {
+	margin-right: 1rem;
+	border-radius: 20px;
+	height: 200px;
+	@include box-shadow;
+	margin-top: 2rem;
+	margin-left: 1rem;
+	&--container {
+		height: 150px;
+		display: flex;
+		align-items: center;
+		overflow: hidden;
+		border-radius: 20px;
+	}
+	
+}
+
+.Section-Button_Restaurants {
+	@include button_pink;
+}
+
+.restaurants__text {
+	display: flex;
+	margin: 0.7rem;
+	&--left {
+		flex-grow: 1;
+	}
+	&--right {
+		font-size: 1.8rem;
+	}
+}
+
+.news__label{
+position: relative;
+    &::after{
+        content: "Nouveau";
+        background-color: $color-terciary;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 10px;
+        color: darken($color-terciary, 40%);
+
     }
-}
-
-
-.restaurants__img{
-    @include image;
-}
-
-.article__restaurants{
-    width: 90%;
-    border-radius: 20px;
-    height: 200px;
-    @include box-shadow;
-    margin-top: 2rem;
-    margin-left: 1rem;
-     &--container{
-         height: 150px;
-         display: flex;
-         align-items: center;
-         overflow: hidden;
-         border-radius: 20px;
-     }
-     &--news{
-         @include rectangle-nouveaute;
-         position: absolute;
-         left: 260px;
-         margin-bottom: 100px;
-         height: 21px;
-         padding-top: 0.6rem;
-         width: 80px;
-         text-align: center;
-         color:darken($color-terciary,40%)
-     }
-     
-}
-
-.Section-Button_Restaurants{
-    @include button_pink;
-
-}
-
-.restaurants__text{
-    display: flex;
-    margin: 0.7rem;
-      &--left{
-          flex-grow: 1;
-      }
-      &--right{
-          font-size: 1.8rem;
-      }
 }
 
 /* modif à faire */
 
-.article__restaurants--heart{
-    
-    position: relative;
-    z-index: 1;
-     &:hover{
-         &::after{
-             opacity: 1;
-            }
-    }
-    
-    &::after{
-        font-weight: 900;
-        content:"\f004";
-        position: absolute;
-        transition: opacity 650ms;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        opacity: 0;
-        z-index: -1;
-        background-clip:text;
-        background:linear-gradient($color-secondary,$color-primary);
-    }
-    
+.article__restaurants--heart {
+	position: relative;
+	z-index: 1;
+	&:hover {
+		&::after {
+			opacity: 1;
+		}
+	}
+
+	&::after {
+		font-weight: 900;
+		content: "\f004";
+		position: absolute;
+		transition: opacity 650ms;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		opacity: 0;
+		z-index: -1;
+		color: $color-secondary;
+		display: block;
+		background: -webkit-linear-gradient($color-secondary, $color-primary);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
 }
-    

@@ -91,8 +91,26 @@ a {
   position: relative;
   z-index: 1;
 }
-.section-booking__position--button:hover {
+.section-booking__position--button:hover::after {
+  opacity: 1;
+}
+.section-booking__position--button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background: radial-gradient(circle, #c9abee 0%, #ff46cc 100%);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
+  height: 3rem;
+  border-radius: 2rem;
+  color: white;
+  border: none;
+  width: 11rem;
+  box-shadow: 2px 2px 14px #aaaaaa;
 }
 
 .nav__button {
@@ -135,6 +153,9 @@ a {
 }
 .nav__button:hover {
   background-color: #f2eafb;
+}
+.nav__button:hover .nav__button--logo {
+  color: #9356DC;
 }
 
 .button__restaurants_menu--text {
@@ -218,7 +239,7 @@ a {
 }
 
 .article__restaurants {
-  width: 90%;
+  margin-right: 1rem;
   border-radius: 20px;
   height: 200px;
   box-shadow: 2px 2px 14px #aaaaaa;
@@ -232,19 +253,6 @@ a {
   overflow: hidden;
   border-radius: 20px;
 }
-.article__restaurants--news {
-  width: 65px;
-  height: 20px;
-  background-color: #99E2D0;
-  position: absolute;
-  left: 260px;
-  margin-bottom: 100px;
-  height: 21px;
-  padding-top: 0.6rem;
-  width: 80px;
-  text-align: center;
-  color: #278870;
-}
 
 .Section-Button_Restaurants {
   background: linear-gradient(#FF79DA, #9356DC);
@@ -257,8 +265,26 @@ a {
   position: relative;
   z-index: 1;
 }
-.Section-Button_Restaurants:hover {
+.Section-Button_Restaurants:hover::after {
+  opacity: 1;
+}
+.Section-Button_Restaurants::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background: radial-gradient(circle, #c9abee 0%, #ff46cc 100%);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
+  height: 3rem;
+  border-radius: 2rem;
+  color: white;
+  border: none;
+  width: 11rem;
+  box-shadow: 2px 2px 14px #aaaaaa;
 }
 
 .restaurants__text {
@@ -270,6 +296,19 @@ a {
 }
 .restaurants__text--right {
   font-size: 1.8rem;
+}
+
+.news__label {
+  position: relative;
+}
+.news__label::after {
+  content: "Nouveau";
+  background-color: #99E2D0;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  color: #278870;
 }
 
 /* modif à faire */
@@ -291,8 +330,11 @@ a {
   left: 0;
   opacity: 0;
   z-index: -1;
-  background-clip: text;
-  background: linear-gradient(#FF79DA, #9356DC);
+  color: #FF79DA;
+  display: block;
+  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .footer {
@@ -420,8 +462,26 @@ a {
   position: relative;
   z-index: 1;
 }
-.order__restaurants--pink:hover {
+.order__restaurants--pink:hover::after {
+  opacity: 1;
+}
+.order__restaurants--pink::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background: radial-gradient(circle, #c9abee 0%, #ff46cc 100%);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
+  height: 3rem;
+  border-radius: 2rem;
+  color: white;
+  border: none;
+  width: 11rem;
+  box-shadow: 2px 2px 14px #aaaaaa;
 }
 
 /*a modif*/
@@ -442,8 +502,27 @@ a {
   right: 0;
   left: 0;
   opacity: 0;
-  color: #9356DC;
+  color: #FF79DA;
   z-index: -1;
+  display: block;
+  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.transition__loading {
+  animation-delay: 1s;
+  animation-duration: 1000ms;
+  animation: none;
+}
+
+@keyframes transition__loading {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

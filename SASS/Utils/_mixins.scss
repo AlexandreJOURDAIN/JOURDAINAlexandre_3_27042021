@@ -1,72 +1,84 @@
 @mixin logo_titre {
-    color:black;
+	color: black;
 	font-family: "Shrikhand";
-	font-size: 1.8rem
+	font-size: 1.8rem;
 }
 
 @mixin button_pink {
-	background:linear-gradient($color-secondary,$color-primary);
+	background: linear-gradient($color-secondary, $color-primary);
 	height: 3rem;
-    border-radius: 2rem;
+	border-radius: 2rem;
 	color: white;
-	border:none;
-    width: 11rem;
-    box-shadow: 2px 2px 14px #aaaaaa;
-    position: relative;
-    z-index: 1;
-    &:hover{
-        background: radial-gradient(circle, lighten($color-primary, 20) 0%, darken($color-secondary,10 ) 100%);
-    }  
+	border: none;
+	width: 11rem;
+	box-shadow: 2px 2px 14px #aaaaaa;
+	position: relative;
+	z-index: 1;
+	&:hover {
+		&::after {
+			opacity: 1;
+		}
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: radial-gradient(circle, lighten($color-primary, 20) 0%, darken($color-secondary, 10) 100%);
+		opacity: 0;
+		z-index: -1;
+		transition: opacity 250ms;
+		height: 3rem;
+		border-radius: 2rem;
+		color: white;
+		border: none;
+		width: 11rem;
+		box-shadow: 2px 2px 14px #aaaaaa;
+	}
 }
 
-
-
-@mixin image{
+@mixin image {
 	object-fit: cover;
 	width: 100%;
 }
 
-@mixin rectangle-nouveaute{
-	width: 65px;
-	height: 20px;
-	background-color:$color-terciary;
-}
-@mixin box-shadow{
+@mixin box-shadow {
 	box-shadow: 2px 2px 14px #aaaaaa;
 }
 
 @mixin button-nav {
 	border-radius: 2rem;
-    height: 4.5rem;
-    margin-top: 1.3rem;
-    border-radius: 25px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 1.2rem;
-    background-color:$color-bakgroung-light;
-    box-shadow: 2px 2px 14px #aaaaaa;
+	height: 4.5rem;
+	margin-top: 1.3rem;
+	border-radius: 25px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 1.2rem;
+	background-color: $color-bakgroung-light;
+	box-shadow: 2px 2px 14px #aaaaaa;
 	border: none;
-    margin-left: 1rem;
+	margin-left: 1rem;
 }
 
-@mixin button-menu{
-    height: 4.5rem;
-    width: 15rem;
-    margin-top: 1.3rem;
-    width: 95%;
-    border-radius: 20px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 1.2rem;
-    background-color:$color-bakgroung-light;
-    box-shadow: 2px 2px 14px #aaaaaa;
+@mixin button-menu {
+	height: 4.5rem;
+	width: 15rem;
+	margin-top: 1.3rem;
+	width: 95%;
+	border-radius: 20px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 1.2rem;
+	background-color: $color-bakgroung-light;
+	box-shadow: 2px 2px 14px #aaaaaa;
 	border: none;
-    margin-left: 1rem;
+	margin-left: 1rem;
 }
 
 @mixin animation-heart {
-    background-color:linear-gradient($color-secondary,$color-primary);
-
+	background-color: linear-gradient($color-secondary, $color-primary);
 }

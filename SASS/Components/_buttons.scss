@@ -36,9 +36,14 @@
 		padding-right: 1rem;
 		color:gray;
 	}
-	&:hover{
-		background-color:lighten($color-primary,35%)
+	&:hover {
+		background-color:lighten($color-primary,35%);
+		 .nav__button--logo{
+			 color: $color-primary;
+		 }
 	}
+	
+
 }
 
 

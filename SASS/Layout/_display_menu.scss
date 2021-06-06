@@ -102,8 +102,27 @@ margin-top: 1rem;
         right: 0;
         left: 0;
         opacity: 0;
-        color:$color-primary;
+        color:$color-secondary;
         z-index: -1;
+        display: block;
+		background: -webkit-linear-gradient($color-secondary, $color-primary);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
     }
     
+}
+
+.transition__loading{
+    animation-delay: 1s;
+    animation-duration: 1000ms;
+    animation: none;
+}
+
+@keyframes transition__loading{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
