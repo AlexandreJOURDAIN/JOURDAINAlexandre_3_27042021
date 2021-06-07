@@ -25,7 +25,6 @@
 		overflow: hidden;
 		border-radius: 20px;
 	}
-	
 }
 
 .Section-Button_Restaurants {
@@ -43,18 +42,17 @@
 	}
 }
 
-.news__label{
-position: relative;
-    &::after{
-        content: "Nouveau";
-        background-color: $color-terciary;
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        padding: 10px;
-        color: darken($color-terciary, 40%);
-
-    }
+.news__label {
+	position: relative;
+	&::after {
+		content: "Nouveau";
+		background-color: $color-terciary;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		padding: 10px;
+		color: darken($color-terciary, 40%);
+	}
 }
 
 /* modif à faire */

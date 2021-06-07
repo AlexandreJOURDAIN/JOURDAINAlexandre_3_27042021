@@ -12,6 +12,32 @@ margin-top: 1rem;
     &--heart{
         font-size: 1.8rem;
         margin-left: 20px;
+        position: relative;
+        z-index: 1;
+         &:hover{
+             &::after{
+                 opacity: 1;
+                }
+        }
+        
+        &::after{
+            font-weight: 900;
+            content:"\f004";
+            position: absolute;
+            transition: opacity 650ms;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            opacity: 0;
+            color:$color-secondary;
+            z-index: -1;
+            display: block;
+            background: -webkit-linear-gradient($color-secondary, $color-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
     }
 }
 
@@ -37,11 +63,11 @@ margin-top: 1rem;
 }
 
 .button__restaurants_menu{
-    @include button-menu
+    @include button-menu;
+    width: 350px;
 }
 
 .restaurants__menu{
-    width: 350px;
 
     &--title{
         
@@ -82,47 +108,19 @@ margin-top: 1rem;
     }
 }
 
- /*a modif*/
- .position__text_global--heart{
-    position: relative;
-    z-index: 1;
-     &:hover{
-         &::after{
-             opacity: 1;
-            }
-    }
-    
-    &::after{
-        font-weight: 900;
-        content:"\f004";
-        position: absolute;
-        transition: opacity 650ms;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        opacity: 0;
-        color:$color-secondary;
-        z-index: -1;
-        display: block;
-		background: -webkit-linear-gradient($color-secondary, $color-primary);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-    }
-    
-}
+ 
 
 .transition__loading{
-    animation-delay: 1s;
-    animation-duration: 1000ms;
-    animation: none;
+    animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
-@keyframes transition__loading{
-    from{
-        opacity: 0;
+@keyframes fade-in-bottom {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
     }
-    to{
-        opacity: 1;
+    100% {
+      transform: translateY(0);
+      opacity: 1;
     }
-}
+  }

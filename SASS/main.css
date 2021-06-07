@@ -195,7 +195,9 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: left;
-  width: 340px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .button__restaurants_menu--price {
@@ -502,6 +504,31 @@ a {
 .position__text_global--heart {
   font-size: 1.8rem;
   margin-left: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.position__text_global--heart:hover::after {
+  opacity: 1;
+}
+
+.position__text_global--heart::after {
+  font-weight: 900;
+  content: "\f004";
+  position: absolute;
+  -webkit-transition: opacity 650ms;
+  transition: opacity 650ms;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  color: #FF79DA;
+  z-index: -1;
+  display: block;
+  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .restaurants__global {
@@ -532,9 +559,7 @@ a {
 
 .button__restaurants_menu {
   height: 4.5rem;
-  width: 15rem;
   margin-top: 1.3rem;
-  width: 95%;
   border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -551,9 +576,6 @@ a {
           box-shadow: 2px 2px 14px #aaaaaa;
   border: none;
   margin-left: 1rem;
-}
-
-.restaurants__menu {
   width: 350px;
 }
 
@@ -634,58 +656,33 @@ a {
           box-shadow: 2px 2px 14px #aaaaaa;
 }
 
-/*a modif*/
-.position__text_global--heart {
-  position: relative;
-  z-index: 1;
-}
-
-.position__text_global--heart:hover::after {
-  opacity: 1;
-}
-
-.position__text_global--heart::after {
-  font-weight: 900;
-  content: "\f004";
-  position: absolute;
-  -webkit-transition: opacity 650ms;
-  transition: opacity 650ms;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  opacity: 0;
-  color: #FF79DA;
-  z-index: -1;
-  display: block;
-  background: -webkit-linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .transition__loading {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-duration: 1000ms;
-          animation-duration: 1000ms;
-  -webkit-animation: none;
-          animation: none;
+  -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+          animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
-@-webkit-keyframes transition__loading {
-  from {
+@-webkit-keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
     opacity: 0;
   }
-  to {
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
   }
 }
 
-@keyframes transition__loading {
-  from {
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
     opacity: 0;
   }
-  to {
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
   }
 }
