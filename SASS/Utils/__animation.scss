@@ -1,0 +1,108 @@
+.transition__loading{
+    animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) 300ms both;
+}
+.transition__loading1{
+    animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) 600ms both;
+}
+.transition__loading2{
+    animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1000ms both;
+}
+
+@keyframes fade-in-top {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+
+ .lds-ring {
+    display: inline-block;
+    position:absolute;
+    width: 80px;
+    height: 80px;
+    z-index: 3;
+    top:calc(50% - 190px);
+    left:calc(50% - 150px);
+    position: fixed;
+    
+    
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    margin: 8px;
+    border: 20px solid $color-primary;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1)infinite;
+    border-color:$color-secondary transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+      
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+    
+  }
+  .text-spiner{
+      @include logo_titre;
+      color:black;
+      font-size: 3rem;
+      font-weight: bold;
+  }
+
+  .loader{
+ 
+ animation: loader 0.5s ease-in forwards;
+    animation-delay: 2.3s;
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+  }
+
+  .background-loader{
+    background-color: white;
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    animation: loader 0.5s ease-in forwards;
+    animation-delay: 2.3s;
+    z-index: 10;
+  }
+
+  @keyframes loader{
+      0%{
+          opacity: 1;
+      }
+      70%{
+          opacity: 1;
+        }
+        100%{
+        z-index:-100;
+          opacity: 0;
+      }
+  }

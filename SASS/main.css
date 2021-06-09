@@ -49,6 +49,175 @@ table {
   border-spacing: 0;
 }
 
+.transition__loading {
+  -webkit-animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 300ms both;
+          animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 300ms both;
+}
+
+.transition__loading1 {
+  -webkit-animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 600ms both;
+          animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 600ms both;
+}
+
+.transition__loading2 {
+  -webkit-animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 1000ms both;
+          animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 1000ms both;
+}
+
+@-webkit-keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.lds-ring {
+  display: inline-block;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  z-index: 3;
+  top: calc(50% - 190px);
+  left: calc(50% - 150px);
+  position: fixed;
+}
+
+.lds-ring div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  margin: 8px;
+  border: 20px solid #9356DC;
+  border-radius: 50%;
+  -webkit-animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+          animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #FF79DA transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+  -webkit-animation-delay: -0.45s;
+          animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+  -webkit-animation-delay: -0.15s;
+          animation-delay: -0.15s;
+}
+
+@-webkit-keyframes lds-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes lds-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.text-spiner {
+  color: black;
+  font-family: "Shrikhand";
+  font-size: 1.8rem;
+  color: black;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.loader {
+  -webkit-animation: loader 0.5s ease-in forwards;
+          animation: loader 0.5s ease-in forwards;
+  -webkit-animation-delay: 2.3s;
+          animation-delay: 2.3s;
+  height: 100%;
+  width: 100%;
+  z-index: 9999;
+}
+
+.background-loader {
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-animation: loader 0.5s ease-in forwards;
+          animation: loader 0.5s ease-in forwards;
+  -webkit-animation-delay: 2.3s;
+          animation-delay: 2.3s;
+  z-index: 10;
+}
+
+@-webkit-keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    z-index: -100;
+    opacity: 0;
+  }
+}
+
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    z-index: -100;
+    opacity: 0;
+  }
+}
+
 .header__title, h1 {
   color: black;
   font-family: "Shrikhand";
@@ -72,6 +241,10 @@ h3 {
 a {
   color: black;
   text-decoration: none;
+}
+
+body {
+  position: relative;
 }
 
 .section-booking__position {
@@ -109,7 +282,7 @@ a {
   right: 0;
   bottom: 0;
   left: 0;
-  background: radial-gradient(circle, #c9abee 0%, #ff46cc 100%);
+  background: radial-gradient(#c9abee 0%, #ff46cc 100%);
   opacity: 0;
   z-index: -1;
   -webkit-transition: opacity 250ms;
@@ -119,8 +292,8 @@ a {
   color: white;
   border: none;
   width: 11rem;
-  -webkit-box-shadow: 2px 2px 14px #aaaaaa;
-          box-shadow: 2px 2px 14px #aaaaaa;
+  -webkit-box-shadow: 2px 2px 20px #aaaaaa;
+          box-shadow: 2px 2px 20px #aaaaaa;
 }
 
 .nav__button {
@@ -368,7 +541,7 @@ a {
   right: 0;
   bottom: 0;
   left: 0;
-  background: radial-gradient(circle, #c9abee 0%, #ff46cc 100%);
+  background: radial-gradient(#c9abee 0%, #ff46cc 100%);
   opacity: 0;
   z-index: -1;
   -webkit-transition: opacity 250ms;
@@ -378,8 +551,8 @@ a {
   color: white;
   border: none;
   width: 11rem;
-  -webkit-box-shadow: 2px 2px 14px #aaaaaa;
-          box-shadow: 2px 2px 14px #aaaaaa;
+  -webkit-box-shadow: 2px 2px 20px #aaaaaa;
+          box-shadow: 2px 2px 20px #aaaaaa;
 }
 
 .restaurants__text {
@@ -642,7 +815,7 @@ a {
   right: 0;
   bottom: 0;
   left: 0;
-  background: radial-gradient(circle, #c9abee 0%, #ff46cc 100%);
+  background: radial-gradient(#c9abee 0%, #ff46cc 100%);
   opacity: 0;
   z-index: -1;
   -webkit-transition: opacity 250ms;
@@ -652,38 +825,7 @@ a {
   color: white;
   border: none;
   width: 11rem;
-  -webkit-box-shadow: 2px 2px 14px #aaaaaa;
-          box-shadow: 2px 2px 14px #aaaaaa;
-}
-
-.transition__loading {
-  -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-          animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-}
-
-@-webkit-keyframes fade-in-bottom {
-  0% {
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes fade-in-bottom {
-  0% {
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
+  -webkit-box-shadow: 2px 2px 20px #aaaaaa;
+          box-shadow: 2px 2px 20px #aaaaaa;
 }
 /*# sourceMappingURL=main.css.map */
