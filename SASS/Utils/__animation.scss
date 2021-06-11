@@ -76,6 +76,7 @@
 	z-index: 9999;
 }
 
+
 .background-loader {
 	background-color: white;
 	position: absolute;
@@ -101,33 +102,51 @@
 	}
 }
 
-.mouvement-boite {
+.check__box :hover {
+  opacity: 1;
+  transition: width 1s ease-in-out;
+  background-color: $color-terciary;
+  width: 70px;
+  height: 70px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  
+}
+.box {
 	background-color: $color-terciary;
-	width: 0px;
+	width: 10px;
 	height: 70px;
-	border-top-right-radius: 15px;
-	border-bottom-right-radius: 15px;
+	border-top-right-radius: 14px;
+	border-bottom-right-radius: 1px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-  opacity: 0;
+
+  }
+
+.circle{
+   font-size: 1.5rem;
+   color: white;
+   display: flex;
+   position: relative;
+   justify-content: center;
+   align-items: center;
 }
-.check__box :hover {
-	opacity: 0;
-	transform: translateY(20px);
-	animation: course-menu-anim 0.65s forwards;
-	animation-delay: 0.4s;
-  
+.check{
+  font-size: 0.7rem;
+  color:$color-terciary ;
+  position: absolute;
 }
 
 
 @keyframes course-menu-anim {
 	0% {
     opacity: 0;
-		transform: translateY(20px);
+		transform: translateX(70px);
+    
 	}
 	100% {
 		opacity: 1;
-		transform: translateY(0px);
+		transform: translateX(0px);
 	}
 }

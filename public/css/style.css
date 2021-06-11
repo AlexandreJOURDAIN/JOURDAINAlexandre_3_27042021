@@ -160,33 +160,50 @@ table {
     opacity: 0;
   }
 }
-.mouvement-boite {
+.check__box :hover {
+  opacity: 1;
+  transition: width 1s ease-in-out;
   background-color: #99E2D0;
-  width: 0px;
+  width: 70px;
   height: 70px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+}
+
+.box {
+  background-color: #99E2D0;
+  width: 10px;
+  height: 70px;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 1px;
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0;
 }
 
-.check__box :hover {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: course-menu-anim 0.65s forwards;
-  animation-delay: 0.4s;
+.circle {
+  font-size: 1.5rem;
+  color: white;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.check {
+  font-size: 0.7rem;
+  color: #99E2D0;
+  position: absolute;
 }
 
 @keyframes course-menu-anim {
   0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateX(70px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateX(0px);
   }
 }
 .header__title, h1 {
@@ -359,6 +376,11 @@ body {
   margin-right: 20px;
 }
 
+.title__fonction {
+  margin-left: 20px;
+  margin-top: 40px;
+}
+
 .nav {
   margin-top: 2rem;
   display: flex;
@@ -461,6 +483,8 @@ body {
 }
 .article__restaurants--heart:hover::after {
   opacity: 1;
+  pointer-events: none;
+  cursor: default;
 }
 .article__restaurants--heart::after {
   font-weight: 900;
@@ -587,6 +611,9 @@ body {
 .button__restaurants_menu--text {
   text-overflow: ellipsis;
 }
+.button__restaurants_menu--price {
+  text-overflow: ellipsis;
+}
 
 .restaurants__menu--underline {
   height: 0.2rem;
@@ -646,6 +673,36 @@ body {
   border: none;
   width: 11rem;
   box-shadow: 2px 2px 20px #aaaaaa;
+}
+
+@media (min-width: 1281px) {
+  .nav {
+    display: flex;
+    flex-direction: unset;
+  }
+
+  .title__fonction {
+    display: flex;
+    justify-content: center;
+  }
+
+  .section__restaurants {
+    flex-direction: row;
+  }
+
+  .article__restaurants {
+    width: 300px;
+  }
+
+  .footer__title {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer__position {
+    display: flex;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
