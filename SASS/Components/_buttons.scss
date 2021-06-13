@@ -36,6 +36,9 @@
 		padding-right: 1rem;
 		color:gray;
 	}
+	&--selection{
+		margin-right: 20px;
+	}
 	&:hover {
 		background-color:lighten($color-primary,35%);
 		 .nav__button--logo{
@@ -54,10 +57,12 @@
         flex-direction: column;
         text-align: left;
 		flex-grow: 1;
+		margin-left: 10px;
     }
     &--price{
         padding-left: 1rem;
         padding-top: 1.5rem;
+		margin-right: 5px;
     }
 
 }

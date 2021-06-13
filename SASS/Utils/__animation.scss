@@ -76,7 +76,6 @@
 	z-index: 9999;
 }
 
-
 .background-loader {
 	background-color: white;
 	position: absolute;
@@ -102,51 +101,50 @@
 	}
 }
 
+.check__box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .check__box :hover {
-  opacity: 1;
-  transition: width 1s ease-in-out;
-  background-color: $color-terciary;
-  width: 70px;
-  height: 70px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  
+	opacity: 1;
+	transition: width 0.5s ease-in-out;
+	background-color: $color-terciary;
+	width: 70px;
+	height: 70px;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
 }
 .box {
 	background-color: $color-terciary;
-	width: 10px;
-	height: 70px;
+	width: 1px;
+	height: 60px;
 	border-top-right-radius: 14px;
 	border-bottom-right-radius: 1px;
+	position: relative;
 	display: flex;
-	align-items: center;
 	justify-content: center;
-
-  }
-
-.circle{
-   font-size: 1.5rem;
-   color: white;
-   display: flex;
-   position: relative;
-   justify-content: center;
-   align-items: center;
-}
-.check{
-  font-size: 0.7rem;
-  color:$color-terciary ;
-  position: absolute;
+	align-items: center;
 }
 
+.check {
+	font-size: 1.4rem;
+	background-color: $color-terciary;
+	color: white;
+	position: absolute;
+	opacity: 0;
+	pointer-events: none;
+	animation: course-menu-anim 2s ease-in-out;
+}
 
 @keyframes course-menu-anim {
 	0% {
-    opacity: 0;
-		transform: translateX(70px);
-    
+		opacity: 0;
+		transform: rotate(120deg);
 	}
 	100% {
 		opacity: 1;
-		transform: translateX(0px);
+		transform: rotate(0deg);
 	}
 }
