@@ -4,7 +4,7 @@
   "description": "JOURDAINAlexandre_3_27042021",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style compressed"
   },
   "repository": {
     "type": "git",
