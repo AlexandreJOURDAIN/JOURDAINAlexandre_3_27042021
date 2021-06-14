@@ -11,7 +11,7 @@
 .nav__button {
 	@include button-nav;
 	margin: 1rem;
-   
+
 	&--number {
 		height: 1.7rem;
 		width: 2rem;
@@ -34,35 +34,34 @@
 	&--logo {
 		font-size: 1.5rem;
 		padding-right: 1rem;
-		color:gray;
+		color: gray;
 	}
-	&--selection{
+	&--selection {
 		margin-right: 20px;
 	}
 	&:hover {
-		background-color:lighten($color-primary,35%);
-		 .nav__button--logo{
-			 color: $color-primary;
-		 }
+		background-color: lighten($color-primary, 35%);
+		.nav__button--logo {
+			color: $color-primary;
+		}
 	}
-	
-
 }
 
-
-.button__restaurants_menu{
-
-    &--text{
-        display: flex;
-        flex-direction: column;
-        text-align: left;
+.button__restaurants_menu {
+	&--text {
+		display: flex;
+		flex-direction: column;
+		text-align: left;
 		flex-grow: 1;
 		margin-left: 10px;
-    }
-    &--price{
-        padding-left: 1rem;
-        padding-top: 1.5rem;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		
+	}
+	&--price {
+		padding-left: 1rem;
+		padding-top: 1.5rem;
 		margin-right: 5px;
-    }
-
+	}
 }
