@@ -108,51 +108,46 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-
-.check__box :hover {
-	opacity: 1;
 	transition: width 0.5s ease-in-out;
 	background-color: $color-terciary;
-	width: 70px;
-	height: 70px;
+	height: 100%;
+	width: 0px;
 	border-top-right-radius: 15px;
 	border-bottom-right-radius: 15px;
-	&.check:hover{
-		animation: course-menu-anim 2s ease-in-out;
-	} 
+
 }
-.check__box--box {
-	background-color: $color-terciary;
-	width: 10px;
-	height: 70px;
-	border-top-right-radius: 14px;
-	border-bottom-right-radius: 1px;
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
+
 
 .check {
-	font-size: 1.4rem;
-	background-color: $color-terciary;
-	color: white;
-	position: absolute;
+	font-size: 1.2rem;
+	color:$color-terciary;
+	background-color: white;
+	border-radius: 50%;
+	opacity: 0;
+}
+
+.button__restaurants_menu:hover > 
+.check__box 
+{
+  width: 50px;
+}
+
+.button__restaurants_menu:hover > 
+.check__box > .check
+{
 	opacity: 1;
-	pointer-events:none;
-	animation: course-menu-anim 2s ease-in-out infinite;
+  animation: check 0.5s ease-in-out ;
 }
 
 
 
-@keyframes course-menu-anim {
+@keyframes check {
 	0% {
-		opacity: 0;
+		
 		transform: rotate(120deg);
 	}
 	100% {
-		opacity: 1;
+		
 		transform: rotate(0deg);
 	}
 }
