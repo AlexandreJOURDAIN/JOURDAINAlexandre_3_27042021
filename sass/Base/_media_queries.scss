@@ -10,7 +10,15 @@
 
     .section__restaurants{
         flex-direction: row;
+        display: flex;
+        justify-content: center;
 
+    }
+    .section__restaurants--title{
+        display: flex;
+            margin-top: 20px;
+            margin-right: 30px;
+            justify-content: center;
     }
 
     .article__restaurants{
@@ -40,4 +48,25 @@
         overflow: hidden;
     }
 
+  }
+  @media screen and (max-device-width: 300px){
+
+    h3{
+        font-size: 0.8rem;
+    }
+
+    .button__restaurants_menu{
+        width: 250px;
+    }
+
+    .button__restaurants_menu--text{
+        font-size: 0.6rem;
+    }
+    .lds-ring {
+        height: 20px;
+        width: 10px;
+    }
+    .text-spiner{
+        margin-left: 10px;
+    }
   }

@@ -9,12 +9,18 @@
 		height: 3rem;
 		background-color: $color-backgroung;
 		padding-left: 4rem;
+	box-shadow: -4px 17px 18px -20px rgb(0 0 0 / 43%) inset;
+		
+		
 		.section-booking--left {
 			border-style: none;
 			background-color: $color-backgroung;
+			box-shadow: -4px 17px 18px -20px rgb(0 0 0 / 43%) inset;
+			padding-left: 10px;
 			
 		}
 		.section-booking--input{
+			box-shadow: -4px 17px 18px -20px rgb(0 0 0 / 43%) inset;
 			@extend.section-booking--left;
 			&::placeholder {
 				color: black;

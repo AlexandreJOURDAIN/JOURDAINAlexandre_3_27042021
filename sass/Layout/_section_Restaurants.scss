@@ -60,16 +60,21 @@
 .article__restaurants--heart {
 	position: relative;
 	z-index: 1;
+	border: none;
+	font-size: 30px;
 	&:hover {
 		&::after {
 			opacity: 1;
 			pointer-events: none;
 			cursor: default;
+			z-index: 2;
+			font-size: 30px;
+			margin-bottom: 2px;
 		}
 	}
 
 	&::after {
-		font-weight: 900;
+		font-weight: 980;
 		content: "\f004";
 		position: absolute;
 		transition: opacity 650ms;
@@ -84,5 +89,6 @@
 		background: -webkit-linear-gradient($color-secondary, $color-primary);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
+		
 	}
 }

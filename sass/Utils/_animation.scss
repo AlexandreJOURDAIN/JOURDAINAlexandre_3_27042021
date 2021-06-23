@@ -120,11 +120,12 @@
 
 
 .check {
-	font-size: 1.2rem;
+	font-size: 0.8rem;
 	color:$color-terciary;
 	background-color: white;
 	border-radius: 50%;
 	opacity: 0;
+	padding: px;
 }
 
 .button__restaurants_menu:hover > 
@@ -145,7 +146,7 @@
 @keyframes check {
 	0% {
 		
-		transform: rotate(120deg);
+		transform: rotate(-360deg);
 	}
 	100% {
 		
