@@ -66,6 +66,7 @@ margin-top: 1rem;
 .button__restaurants_menu{
     @include button-menu;
     width: 350px;
+    margin-left: 0rem;
     &--text{
         text-overflow:ellipsis;
     }
