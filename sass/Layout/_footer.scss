@@ -1,36 +1,31 @@
-.footer{
-    background-color:$color-backgroung;
-    height: 180px;
-    background-color:darken(#d9d9d9,70);
+.footer {
+	background-color: $color-backgroung;
+	height: 180px;
+	background-color: darken(#d9d9d9, 70);
 }
-.footer__title
-{
-    @include logo_titre;
-    font-size:1.2rem;
-    padding-left:1rem;
-    color: white;
-    padding-top: 1rem;
-}
-
-
-.footer__position{
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    
-
+.footer__title {
+	@include logo_titre;
+	font-size: 1.2rem;
+	padding-left: 1rem;
+	color: white;
+	padding-top: 1rem;
 }
 
+.footer__position {
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+}
 
-.footer__menu{
-    display: flex;
-    margin-top: 10px;
-    color: white;
-    font-weight: bold;
-    &--logo{
-        padding-right: 10px;
-    }
-    &--logo1{
-        padding-right: 4px;
-    }
+.footer__menu {
+	display: flex;
+	margin-top: 10px;
+	color: white;
+	font-weight: bold;
+	&--logo {
+		padding-right: 10px;
+	}
+	&--logo1 {
+		padding-right: 4px;
+	}
 }
