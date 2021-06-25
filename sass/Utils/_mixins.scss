@@ -6,7 +6,7 @@
 
 @mixin button_pink {
 	background: linear-gradient($color-secondary, $color-primary);
-	height: 3rem;
+	height: 2.5rem;
 	border-radius: 2rem;
 	color: white;
 	border: none;
@@ -14,6 +14,7 @@
 	box-shadow: 2px 2px 14px #aaaaaa;
 	position: relative;
 	z-index: 1;
+	padding: 10px;
 	&:hover {
 		&::after {
 			opacity: 1;
